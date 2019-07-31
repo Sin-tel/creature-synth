@@ -11,6 +11,7 @@ some literature:
  - https://ccrma.stanford.edu/files/papers/stanm80.pdf
  - https://doi.org/10.1109/ISSPIT.2003.1341230
  - https://doi.org/10.1121/1.1869752
+ - https://www.native-instruments.com/fileadmin/ni_media/downloads/pdf/VAFilterDesign_2.0.0a.pdf (see chapter 4 for derivations of the SVF)
 
 nice implementation of single multiply kelly-lochbaum junctions:
 https://dood.al/pinktrombone/
