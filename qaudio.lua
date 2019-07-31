@@ -43,8 +43,8 @@ function Quadio.update()
 	if qs:getFreeBufferCount() == 0 then return end -- only render if we can.
 	local samplesToMix = bufferSize -- easy way of doing things.
 	for smp = 0, samplesToMix-1 do
-	 	lambda1 = smp/samplesToMix
-	 	lambda2 = (smp+0.5)/samplesToMix
+		lambda1 = smp/samplesToMix
+		lambda2 = (smp+0.5)/samplesToMix
 		-- put your generator function here.
 		sd:setSample(pointer, fun(dspTime))
 		pointer = pointer + 1

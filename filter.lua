@@ -28,25 +28,25 @@ function Filter(params)
 		
 		process = function (input)
 			local hp, bp, lp
-		    hp = (input - params.r * state_1_ - params.g * state_1_ - state_2_) * params.h
-		    bp = params.g * hp + state_1_
-		    state_1_ = params.g * hp + bp
-		    lp = params.g * bp + state_2_
-		    state_2_ = params.g * bp + lp
+			hp = (input - params.r * state_1_ - params.g * state_1_ - state_2_) * params.h
+			bp = params.g * hp + state_1_
+			state_1_ = params.g * hp + bp
+			lp = params.g * bp + state_2_
+			state_2_ = params.g * bp + lp
 
-		    --amp = amp - 0.1*(amp-math.abs(bp))
+			--amp = amp - 0.1*(amp-math.abs(bp))
 			return lp
 		end;
 
 		processBp = function (input)
 			local hp, bp, lp
-		    hp = (input - params.r * state_1_ - params.g * state_1_ - state_2_) * params.h
-		    bp = params.g * hp + state_1_
-		    state_1_ = params.g * hp + bp
-		    lp = params.g * bp + state_2_
-		    state_2_ = params.g * bp + lp
+			hp = (input - params.r * state_1_ - params.g * state_1_ - state_2_) * params.h
+			bp = params.g * hp + state_1_
+			state_1_ = params.g * hp + bp
+			lp = params.g * bp + state_2_
+			state_2_ = params.g * bp + lp
 
-		    --amp = amp - 0.1*(amp-math.abs(bp))
+			--amp = amp - 0.1*(amp-math.abs(bp))
 			return bp
 		end;
 

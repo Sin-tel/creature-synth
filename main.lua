@@ -66,12 +66,12 @@ function dsp(time)
 
 	--upsample x2
 	local out = tract:update(lambda1)
-    out = out + tract:update(lambda2)
+	out = out + tract:update(lambda2)
 
-    --bad interpolation by averaging two samples
-    out = clip(out*0.5)
+	--bad interpolation by averaging two samples
+	out = clip(out*0.5)
 
-    return out
+	return out
 end
 
 
@@ -183,7 +183,7 @@ function love.mousepressed(x, y, button, istouch)
 end
 
 function love.mousereleased(x, y, button, istouch)
-for i,v in ipairs(sliders) do
+	for i,v in ipairs(sliders) do
 		v:mousereleased(x,y)
 	end
 	if sliderReverb.val > 0.02 then
